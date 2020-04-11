@@ -13,7 +13,7 @@ form.addEventListener('submit', (e) => {
     p1.textContent = 'Getting the data...';
     p2.textContent = '';
     
-    fetch('http://127.0.0.1:3000/weather?address=' + location)
+    fetch('/weather?address=' + location)
     .then(res => {
         if (res.status != 200) {
             p1.textContent = 'There\'s an error';
